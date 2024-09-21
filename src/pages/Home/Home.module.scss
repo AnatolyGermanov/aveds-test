@@ -1,0 +1,12 @@
+@use '../../assets/styles/media' as media;
+
+.services {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @include media.mobile {
+        padding-inline: 12px;
+        justify-content: center;
+    }
+}

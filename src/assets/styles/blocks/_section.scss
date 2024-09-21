@@ -1,0 +1,26 @@
+@use '../media' as media;
+
+.section {
+    padding-block: var(--section-padding-y);
+
+    &__title {
+        max-width: 727px;
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        column-gap: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 80px;
+
+            @include media.mobile {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@use '../../assets/styles/media' as media;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 328px;
+    padding: 35px 40px;
+    box-shadow: 0 13px 19px 0 rgb(0 0 0 / 0.07);
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--color-danger);
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: var(--color-dark);
+    }
+
+    &__divider {
+        width: 50px;
+        height: 2px;
+        background-color: var(--color-danger);
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: var(--color-gray);
+    }
+}

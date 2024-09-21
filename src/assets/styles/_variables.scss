@@ -1,0 +1,21 @@
+:root {
+    --color-dark: #252b42;
+    --color-light: #ffffff;
+    --color-primary: #ff685b;
+    --color-danger: #e74040;
+    --color-gray: #737373;
+
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-alt: 'Open Sans', sans-serif;
+
+    --container-width: 1046px;
+    --container-padding-x: 12px;
+
+    --section-padding-y: 80px;
+
+    --transition-duration: 0.2s;
+
+    @include mobile {
+        --section-padding-y: 40px;
+    }
+}

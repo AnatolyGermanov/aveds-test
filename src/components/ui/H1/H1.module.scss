@@ -1,0 +1,9 @@
+@use '../../../assets/styles/mixins' as mixins;
+
+.h1 {
+    @include mixins.fluid-text(58, 28);
+    
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    color: var(--color-dark);
+}

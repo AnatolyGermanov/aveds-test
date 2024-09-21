@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+    background-color: var(--color-light);
+
+    &__title {
+        color: var(--color-dark);
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__message {
+        max-width: 216px;
+        min-height: 42px;
+        font-size: 14px;
+        color: var(--color-danger);
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
